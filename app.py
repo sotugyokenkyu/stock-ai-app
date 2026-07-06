@@ -142,7 +142,7 @@ if analyze_button:
                 """
 
                 # Gemini API呼び出し
-                url_generate = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={api_key}"
+                url_generate = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
                 headers = {'Content-Type': 'application/json'}
                 payload = {"contents": [{"parts": [{"text": prompt}]}]}
                 res_gen = requests.post(url_generate, headers=headers, json=payload)
